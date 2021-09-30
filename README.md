@@ -16,3 +16,9 @@ apt update
 apt install openssl ca-certificates -y
 bash /docker/create-cert.sh
 ```
+
+## Special thanks
+
+- https://ma38su.hatenablog.com/entry/2020/06/27/235451
+- https://kazuhira-r.hatenablog.com/entry/20180803/1533302929
+- and some blog/stackoverflow posts
