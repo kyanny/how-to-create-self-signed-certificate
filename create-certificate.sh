@@ -24,7 +24,7 @@ openssl req -new -key $hostname.key -out $hostname.csr -subj "/CN=*.$hostname"
 openssl x509 -req -days 365 -in $hostname.csr -signkey $hostname.key -out $hostname.crt -extfile san.txt
 
 # check
-openssl x509 -text -in $hostname.crt --noout
+openssl x509 -text -in $hostname.crt -noout
 
 #cp $hostname.crt /etc/ssl/certs/$hostname.crt
 #update-ca-certificates
