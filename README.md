@@ -5,7 +5,7 @@
 ```
 vagrant up
 vagrant ssh
-sudo bash /vagrant/create-cert.sh
+sudo bash /vagrant/create-certificate.sh
 ```
 
 ## Docker
@@ -14,7 +14,7 @@ sudo bash /vagrant/create-cert.sh
 docker run -it --rm --mount type=bind,source=$(pwd),target=/docker ubuntu
 apt update
 apt install openssl ca-certificates -y
-bash /docker/create-cert.sh
+bash /docker/create-certificate.sh
 ```
 
 ## Special thanks
